@@ -1,0 +1,6 @@
+#layout-container {
+  min-height: 90%;
+}
+#layout {
+  min-width: fit-content;
+}

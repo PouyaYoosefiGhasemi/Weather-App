@@ -1,0 +1,31 @@
+.data-container {
+  width: 330px;
+  height: 110px;
+  border-radius: 8px;
+  background-color: rgb(105, 105, 105, 0.7);
+  margin: 5px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.data-container-title {
+  font-size: 19px;
+  color: rgb(214, 214, 214);
+}
+.data-container-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-container-data {
+  font-size: 16px;
+  color: rgb(214, 214, 214);
+}
+
+.data-container-exp {
+  font-size: 14px;
+  color: rgb(214, 214, 214);
+}
