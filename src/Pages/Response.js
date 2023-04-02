@@ -151,29 +151,35 @@ class Response extends React.Component {
         )}
 
         {data && (
-          <div className="animate__animated animate__zoomIn flex flex-col  justify-around items-center bg-zinc-500 bg-opacity-60 mobile:bg-inherit mobile:w-screen mobile:flex-row mobile:flex-wrap">
-            <DataBox
-              header={"Clouds"}
-              data={data && data.clouds.all + "%"}
-              desc={data && data.weather[0].description}
-            />
+          <div
+            className="animate__animated animate__zoomIn flex w-[320px] flex-col  justify-around
+           items-center bg-zinc-500 bg-opacity-60 mobile:bg-inherit mobile:w-screen mobile:flex-row mobile:flex-wrap"
+          >
+            <div className="flex flex-wrap mobile:flex-nowrap w-full justify-center ">
+              <DataBox
+                header={"Clouds"}
+                data={data && data.clouds.all + "%"}
+                desc={data && data.weather[0].description}
+              />
 
-            <DataBox
-              header={"Humidity"}
-              desc={data && tempFeel}
-              data={data && data.main.humidity + "%"}
-            />
-            <DataBox
-              header={"Visibility"}
-              desc={data && visibleA}
-              data={data && data.visibility + "m"}
-            />
-            <DataBox
-              header={"Wind"}
-              desc={data && "We are experiencing a wind from " + windDirection}
-              data={data && data.wind.speed + "m/s"}
-            />
-
+              <DataBox
+                header={"Humidity"}
+                desc={data && tempFeel}
+                data={data && data.main.humidity + "%"}
+              />
+            </div>
+            <div className="flex flex-wrap mobile:flex-nowrap w-full justify-center">
+              <DataBox
+                header={"Visibility"}
+                desc={data && visibleA}
+                data={data && data.visibility + "m"}
+              />
+              <DataBox
+                header={"Wind"}
+                desc={data && "Experiencing a wind from " + windDirection}
+                data={data && data.wind.speed + "m/s"}
+              />
+            </div>
             <SearchBox id={"city-choice"} action={() => this.ApiCall()} />
           </div>
         )}

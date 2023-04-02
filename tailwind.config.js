@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     screens: {
       mobile: { max: "699px" },
+      Smobile: { max: "340px" },
     },
     extend: {
       backgroundImage: (theme) => ({

@@ -7,7 +7,7 @@ function SearchBox(props) {
     <div className="  -mt-1 z-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-1 rounded-b ">
       <form
         className={
-          "w-80 h-16 bg-zinc-500 bg-opacity-40 items-center flex justify-around rounded-b p-5" +
+          "w-[312px] h-16 bg-zinc-500 bg-opacity-40 items-center flex justify-around rounded-b p-5" +
           props.inClass
         }
         onSubmit={handleSubmit}

@@ -1,5 +1,6 @@
 .data-container {
-  width: 330px;
+  width: 90%;
+  min-width: 110px;
   height: 110px;
   border-radius: 8px;
   background-color: rgb(105, 105, 105, 0.7);
@@ -27,5 +28,6 @@
 
 .data-container-exp {
   font-size: 14px;
+  margin-left: 5px;
   color: rgb(214, 214, 214);
 }
