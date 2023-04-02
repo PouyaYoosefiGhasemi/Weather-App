@@ -4,7 +4,7 @@ import "./index.css";
 const Layout = (props) => {
   return (
     <div
-      className="w-screen   h-[100dvh] flex flex-col  bg-[#94b9cb] "
+      className="w-screen   h-screen flex flex-col  bg-[#94b9cb] "
       id="layout"
     >
       <Nav />
