@@ -3,6 +3,7 @@
 }
 #layout {
   height: 100dvh;
-  height: 100vh;
+  min-height: 100sh;
+  max-height: 100lvh;
   min-width: fit-content;
 }
