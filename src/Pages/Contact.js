@@ -31,7 +31,7 @@ function Contact() {
         <ContactCard
           logo={require("../img/gitHub-logo.png")}
           alt={"GitHub"}
-          link={"#"}
+          link={"https://github.com/PouyaYoosefiGhasemi/Weather-App.git"}
           linkExplaination={"Go to Repository"}
         >
           Let's see the source of this project on GitHub
